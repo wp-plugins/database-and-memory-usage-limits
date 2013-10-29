@@ -12,7 +12,7 @@ It Shows Total Memory Usage on WordPress Dashboard, and it also shows the Memory
 
 == Installation ==
 <p>Manual</p>
-1. Upload the `refli-short-urls` folder to `/wp-content/plugins/`.
+1. Upload the `database-and-memory-usage-limits` folder to `/wp-content/plugins/`.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 <p>Automatic</p>
