@@ -1,0 +1,30 @@
+=== Database and Memory Usage Limits by WPFIXIT ===
+Contributors: WPFIXIT
+Tags: memoray usage, database usage, memory limit, wordpress errors
+Requires at least: 3.0
+Tested up to: 3.7
+Stable tag: trunk
+License: GPLv3
+
+This Plugin Show Total Database and Memory Usage with Memory Limits in Admin Dashboard Footer and Admin Dashboard Page
+== Description ==
+It Shows Total Memory Usage on WordPress Dashboard, and it also shows the Memory Load currently used by WordPress on Footer Admin Control Panel with very less load consumption. It is Compatible with Shared VPS and Dedicated Hosting.
+
+== Installation ==
+<p>Manual</p>
+1. Upload the `refli-short-urls` folder to `/wp-content/plugins/`.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+
+<p>Automatic</p>
+1. Goto Dasboard Plugin click 'Add New' search for 'Database and Memory Usage Limits by WPFIXIT' .
+2. Click Install.
+3. Activate Plugin.
+
+
+== Changelog ==
+
+= 1.0 =
+
+
+== Upgrade Notice ==
+= None. =
