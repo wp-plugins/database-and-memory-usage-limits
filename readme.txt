@@ -1,6 +1,6 @@
 === Database and Memory Usage Limits by WPFIXIT ===
 Contributors: WPFIXIT
-Tags: memoray usage, database usage, memory limit, wordpress errors
+Tags: memoray usage, database usage, memory limit, wordpress errors, bump, dashboard, footer, limit, lite, load, memory, overview, show, usage, wp
 Requires at least: 3.0
 Tested up to: 3.7
 Stable tag: trunk
