@@ -34,6 +34,11 @@ It Shows Total Memory Usage on WordPress Dashboard, and it also shows the Memory
 
 = 1.0 =
 
+= 1.2 =
+* Bug Fixed
+* Dashboard Resource Usage
+* User Instantly Report Issues
+
 
 == Upgrade Notice ==
 = None. =

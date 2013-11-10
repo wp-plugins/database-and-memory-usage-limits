@@ -3,7 +3,7 @@
 Plugin Name: Database and Memory Usage
 Plugin URI: thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/ 
 Description: This Plugin Show Total Database and Memory Usage with Memory Limits in Admin Dashboard Footer and Admin Dashboard Page
-Version: 1.0
+Version: 1.2
 Author: WPFIXIT
 Author URI: http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/
 */
