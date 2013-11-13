@@ -39,6 +39,10 @@ It Shows Total Memory Usage on WordPress Dashboard, and it also shows the Memory
 * Dashboard Resource Usage
 * User Instantly Report Issues
 
+= 1.2.1 =
+* Contact Form Fixed
+
+
 
 == Upgrade Notice ==
 = None. =

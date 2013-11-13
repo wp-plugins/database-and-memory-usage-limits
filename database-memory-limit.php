@@ -3,7 +3,7 @@
 Plugin Name: Database and Memory Usage
 Plugin URI: thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/ 
 Description: This Plugin Show Total Database and Memory Usage with Memory Limits in Admin Dashboard Footer and Admin Dashboard Page
-Version: 1.2
+Version: 1.2.1
 Author: WPFIXIT
 Author URI: http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/
 */
@@ -271,31 +271,11 @@ textarea:focus, input:focus {
 border: 1px solid #09C;
 }
 	</style>
-<h1>Instantly Report any issue</h1><div id="contact-form-937">
-<form target="_blank" action="http://thesetemplates.info/contact-page-wordpress/#contact-form-937" method="post" class="contact-form commentsblock">
-<div>
-		<label for="937-name" class="grunion-field-label name">Name<span> (required)</span></label><br>
-		<input type="text" name="937-name" id="937-name" value="" class="name" size="40">
-	</div>
-<div>
-		<label for="937-email" class="grunion-field-label email">Email<span> (Invoice will be sent to this email)</span></label><br>
-		<input type="email" name="937-email" id="937-email" value="" class="email" size="40">
-	</div>
-<div>
-		<label for="937-website" class="grunion-field-label url">Website</label><br>
-		<input type="text" name="937-website" id="937-website" value="" class="url" size="40" >
-	</div>
-<div>
-		<label for="contact-form-comment-937-comment" class="grunion-field-label textarea">Explain your issue in detail<span> (required)</span></label><br>
-		<textarea name="937-comment" id="contact-form-comment-937-comment" rows="7"  cols="70" placeholder="You may create a post and copy/paste a post link in here or you may just explain your issue we will get back to you within 12 hours"></textarea>
-	</div>
-<p class="contact-submit">
-		<input type="submit" value="Panic $35 »" class="pushbutton-wide"><br>
-		<input type="hidden" id="_wpnonce" name="_wpnonce" value="7b9bf669bf"><input type="hidden" name="_wp_http_referer" value="/contact-page-wordpress/"><br>
-		<input type="hidden" name="contact-form-id" value="937"><br>
-		<input type="hidden" name="action" value="grunion-contact-form">
-	</p>
-</form>
+<img src="http://oi44.tinypic.com/2iqmomv.jpg" />
+	<h1>Instantly Report any issue</h1><div id="contact-form-937">
+
+<iframe src="https://docs.google.com/forms/d/126Ie10leVmwzDL1-0EO2hZd4SAVxAQJTQ5AynWYXZhM/viewform?embedded=true" width="480" height="530" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
 </div><br /><h2>We can fix following issues</h2><li>Theme bugs</li><li>Plugin bugs</li><li>WordPress issues</li><li>Database problem</li><li>Slow website speed</li><li>Increase Resource Usage</li><br /><h1>Our Portfolio:<a target="_blank" href="http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/"><img src="' . plugins_url( 'images/portfolio48.png' , __FILE__ ) . '" /></a></h1><br /><img src="' . plugins_url( 'images/100satisfaction-3.png' , __FILE__ ) . '" /><img src="' . plugins_url( 'images/100moneyback-3.png' , __FILE__ ) . '" />';	
 }
 ?>
