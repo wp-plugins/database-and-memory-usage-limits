@@ -3,9 +3,9 @@
 Plugin Name: Database and Memory Usage
 Plugin URI: thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/ 
 Description: This Plugin Show Total Database and Memory Usage with Memory Limits in Admin Dashboard Footer and Admin Dashboard Page
-Version: 1.2.1
+Version: 1.5.0
 Author: WPFIXIT
-Author URI: http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/
+Author URI: http://wpfixit.net/
 */
 	if (!function_exists('add_action'))
 		{
@@ -155,7 +155,7 @@ Author URI: http://thesetemplates.info/services/professionally-fix-troubleshoot-
 					function wpo_footer($content)
 						{
 							$this->wpo_load();
-							$content .= ' ~ load ' . $this->memory['wpo-load'] . ' of ' . $this->memory['wpo-limit'] . 'M';
+							$content .= ' ~ Memory Load ' . $this->memory['wpo-load'] . ' out of ' . $this->memory['wpo-limit'] . 'M';
 							return $content;
 						}
 				}
@@ -186,13 +186,13 @@ Author URI: http://thesetemplates.info/services/professionally-fix-troubleshoot-
 				{
 					$rows   = mysql_query("SHOW table STATUS");
 					$dbsize = 0;
-					$panic  = '<span id="footer-thankyou"> WPFIXIT </span><a href="http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/"><img width="80px" src="' . plugins_url( 'images/panic.png' , __FILE__ ) . '" /></a>';
+					$panic  = '<span id="footer-thankyou"> <a style="color:red;" href="'.site_url().'/wp-admin/admin.php?page=WPFIXIT">WPFIXIT</a> </span>';
 					while ($row = mysql_fetch_array($rows))
 						{
 							$dbsize += $row['Data_length'] + $row['Index_length'];
 						}
 					$dbsize = wpo_fs_info($dbsize);
-					echo "database {$dbsize['size']}{$dbsize['type']}{$panic}";
+					echo "Database Size {$dbsize['size']}{$dbsize['type']}{$panic}";
 				}
 			add_filter('admin_footer_text', 'wpo_db_size');
 		}
@@ -203,79 +203,22 @@ function register_wpfixit_menu_page(){
 }
 
 function wpfixit_menu_page(){
-    echo '<style>
-h1 {
-font-size: 2em;
-margin: .67em 0;
-color: #09C;
-}
-	form    {
-background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
-background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-margin:auto;
-position:relative;
-width:550px;
-height:450px;
-font-family: Tahoma, Geneva, sans-serif;
-font-size: 14px;
-font-style: italic;
-line-height: 24px;
-font-weight: bold;
-color: #09C;
-text-decoration: none;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-padding:10px;
-border: 1px solid #999;
-border: inset 1px solid #333;
--webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-}
-input    {
-width:375px;
-display:block;
-border: 1px solid #999;
-height: 25px;
--webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-}
-textarea#feedback {
-width:375px;
-height:150px;
-}
-textarea.message {
-display:block;
-}
-input.button {
-width:100px;
-position:absolute;
-right:20px;
-bottom:20px;
-background:#09C;
-color:#fff;
-font-family: Tahoma, Geneva, sans-serif;
-height:30px;
--webkit-border-radius: 15px;
--moz-border-radius: 15px;
-border-radius: 15px;
-border: 1p solid #999;
-}
-input.button:hover {
-background:#fff;
-color:#09C;
-}
-textarea:focus, input:focus {
-border: 1px solid #09C;
-}
-	</style>
-<img src="http://oi44.tinypic.com/2iqmomv.jpg" />
-	<h1>Instantly Report any issue</h1><div id="contact-form-937">
-
-<iframe src="https://docs.google.com/forms/d/126Ie10leVmwzDL1-0EO2hZd4SAVxAQJTQ5AynWYXZhM/viewform?embedded=true" width="480" height="530" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-</div><br /><h2>We can fix following issues</h2><li>Theme bugs</li><li>Plugin bugs</li><li>WordPress issues</li><li>Database problem</li><li>Slow website speed</li><li>Increase Resource Usage</li><br /><h1>Our Portfolio:<a target="_blank" href="http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/"><img src="' . plugins_url( 'images/portfolio48.png' , __FILE__ ) . '" /></a></h1><br /><img src="' . plugins_url( 'images/100satisfaction-3.png' , __FILE__ ) . '" /><img src="' . plugins_url( 'images/100moneyback-3.png' , __FILE__ ) . '" /><br /><strong>Recommended Hosting for WordPress:</strong><br /><a target="_blank" href="http://www.fatcow.com/join/index.bml?bannerID=1021&AffID=714946"><img src="http://www.fatcow.com/affiliate/banners/1021" style="border:0px" alt="affiliate_link"></a>';	
+	
+	$current_user = wp_get_current_user();
+    /**
+     * @example Safe usage: $current_user = wp_get_current_user();
+     * if ( !($current_user instanceof WP_User) )
+     *     return;
+     */	
+    ?>
+    <h1>Submit Your Issue:</h1>
+    <form action="http://www.wpfixit.net/?page_id=168" method="post" target="_blank">
+    <label>Subject: </label><br /><input type="text" name="subject" /><br />
+    <label>Issue: </label><br /><textarea name="issue" cols="60" rows="10" ></textarea>
+    <input name="username" type="hidden" value="<?php echo urlencode(bloginfo('name')).'-'.$current_user->user_login ?>" />
+    <input name="email" type="hidden" value="<?php echo $current_user->user_email ?>" />
+    <?php submit_button('Submit Ticket $38'); ?>
+    </form>
+    <?php	
 }
 ?>

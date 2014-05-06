@@ -2,7 +2,7 @@
 Contributors: WPFIXIT
 Tags: memoray usage, database usage, memory limit, wordpress errors, bump, dashboard, footer, limit, lite, load, memory, overview, show, usage, wp
 Requires at least: 3.0
-Tested up to: 3.7.1
+Tested up to: 3.9.1
 Stable tag: trunk
 License: GPLv3
 
@@ -43,6 +43,6 @@ It Shows Total Memory Usage on WordPress Dashboard, and it also shows the Memory
 * Contact Form Fixed
 
 
-
-== Upgrade Notice ==
-= None. =
+= 1.5 =
+* Many Bug Fixed
+* Code Simplified
