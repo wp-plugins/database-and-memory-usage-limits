@@ -2,7 +2,7 @@
 Contributors: WPFIXIT
 Tags: memoray usage, database usage, memory limit, wordpress errors, bump, dashboard, footer, limit, lite, load, memory, overview, show, usage, wp
 Requires at least: 3.0
-Tested up to: 3.9.1
+Tested up to: 4.0.1
 Stable tag: trunk
 License: GPLv3
 
